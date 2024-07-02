@@ -30,7 +30,7 @@ services:
   mysql:
     container_name: mysql
     image: mysql:latest
-    command: --default-authentication-plugin=mysql_native_password
+    command: --mysql_native_password=ON
     environment:
       - MYSQL_ROOT_PASSWORD=root
     ports:
@@ -40,7 +40,6 @@ services:
     container_name: pma
     image: phpmyadmin:latest
     environment:
-      - PMA_ABSOLUTE_URI=http://localhost/pma/
       - PMA_HOST=mysql        
       - PMA_USER=root
       - PMA_PASSWORD=root
