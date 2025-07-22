@@ -1,6 +1,6 @@
 A simple LEMP stack to use with Docker Compose. Consisted of NGINX, PHP-FPM (7.4 and 8.X.X), MySQL and phpMyAdmin.
 
-# Usage
+## Usage
 
 Jump on with `docker-compose up`.
 
